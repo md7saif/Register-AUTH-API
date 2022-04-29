@@ -128,7 +128,7 @@ def sign_in():
         # data_received object containing information entered by user
         data_received = request.form
         
-        user_email = data_received['email']
+        user_email = data_received['email'].lower()     # Convert user input to lowercase
         user_password = data_received['password']
 
         # Nested If-elses to check for empty values
@@ -200,7 +200,7 @@ def register():
         data_received = request.form
         
         user_name = data_received['name']
-        user_email = data_received['email']
+        user_email = data_received['email'].lower()     # Convert user input to lowercase
         user_password = data_received['password']
 
         # Nested If-elses to check for empty values
@@ -271,5 +271,5 @@ def register():
 
 if __name__ == '__main__':
     # Address for all devices to on local server to access this application
-    # app.run(host="192.168.1.14", port=5000, debug=True, threaded=False)
-    app.run()
+    app.run(host="192.168.1.14", port=5000, debug=True, threaded=False)
+    # app.run()
