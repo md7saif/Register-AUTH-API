@@ -1,5 +1,6 @@
-Step 1:
+--> STEP 1:
 
+Python 3 needs to be installed to run .py scripts
 Install following libraries & packages on the host system,
 
 pip install Flask
@@ -9,18 +10,18 @@ pip install json2html
 
 Version information in requirements.txt
 
-Step 2:
+--> STEP 2:
 
 Run API.py
 
-Step 3:
+--> STEP 3:
 
 Copy-paste development server address onto a browser and append endpoint names (identifier)
 
 - - - - - - 
 
 
-List of endpoints:
+--> List of endpoints:
 
 /auth
 [POST, GET]
