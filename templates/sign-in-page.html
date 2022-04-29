@@ -1,0 +1,18 @@
+{% with messages = get_flashed_messages() %}
+   {% if messages %}
+      {% for message in messages %}
+         <h3>{{ message }}</h3>
+      {% endfor %}
+   {% endif %}
+{% endwith %}
+
+<h1>Sign-in Below</h1> 
+
+<form method="POST">
+   <div><label>Email Address: <input type="text" name="email"></label></div>
+    <div><label>Password: <input type="password" name="password"></label></div>
+    <input type="submit" value="Sign In">
+</form>
+
+<button type="button" onclick="window.location.href='{{ url_for( 'read_all') }}';">View DB
+</button>
