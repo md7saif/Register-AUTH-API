@@ -271,5 +271,5 @@ def register():
 
 if __name__ == '__main__':
     # Address for all devices to on local server to access this application
-    app.run(host="192.168.1.14", port=5000, debug=True, threaded=False)
-    # app.run()
+    # app.run(host="192.168.1.14", port=5000, debug=True, threaded=False)
+    app.run()
